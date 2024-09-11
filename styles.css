@@ -1,0 +1,110 @@
+p:first-of-type {
+  margin-bottom: 0px;
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+  text-align: left;
+}
+
+p:nth-of-type(2) {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 50px;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+  text-align: left;
+}
+
+p:nth-of-type(3) {
+  margin-top: 0px;
+  color: white;
+  font-size: 15px;
+  font-family: "SimHei", "Microsoft YaHei", "黑体";
+  text-align: left;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* 使子元素垂直排列 */
+  align-items: center; /* 居中对齐按钮 */
+  gap: 10px; /* 按钮之间的间距 */
+
+  position: absolute; /* 绝对定位 */
+  bottom: 40px; /* 距离页面底部40px */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 用 transform 修正水平居中 */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* 使子元素垂直排列 */
+  align-items: center; /* 居中对齐按钮 */
+  gap: 20px; /* 按钮之间的间距变大 */
+
+  position: absolute; /* 绝对定位 */
+  bottom: 40px; /* 距离页面底部40px */
+  left: 50%; /* 水平居中 */
+  transform: translateX(-50%); /* 用 transform 修正水平居中 */
+}
+
+button {
+  display: flex; /* 使用 flexbox 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  font-weight: bold;
+
+  padding: 15px 40px; /* 增加按钮内边距，按钮高度和宽度增加 */
+  font-size: 16px; /* 字体大小 */
+  cursor: pointer; /* 鼠标悬停时变成手型 */
+  border-radius: 5px; /* 圆角按钮 */
+
+  background-clip: padding-box;
+  width: 220px; /* 按钮的固定宽度 */
+  height: 30px; /* 按钮的固定高度 */
+  background-color: transparent; /* 透明背景 */
+  color: white; /* 按钮文本颜色为白色 */
+  border: 2px solid transparent; /* 初始边框透明 */
+  border-image: radial-gradient(transparent, white) 1; /* 设置边框渐变效果 */
+  transition: background 0.3s, box-shadow 0.3s, border 0.3s, color 0.3s; /* 动画效果 */
+}
+
+button:hover {
+  background: linear-gradient(to right, #449041, #375659); /* 背景渐变 */
+  color: white; /* 悬停时文本颜色为白色 */
+  border-image: none; /* 悬停时边框恢复为普通白色 */
+  border: 2px solid white; /* 鼠标悬停时边框为纯白 */
+}
+
+p:last-of-type {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+html {
+  background-color: #231925;
+  background-image: url("src/xjn1.png");
+  background-size: 120% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  padding: 60px 20px 0px 20px;
+  position: relative;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
