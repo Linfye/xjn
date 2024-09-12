@@ -1,0 +1,122 @@
+html {
+  background-color: #231925;
+  background-image: url("src/xjn3.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: relative; /* 确保伪元素可以相对于html定位 */
+}
+
+html::before {
+  content: ""; /* 伪元素需要内容属性 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明蒙版 */
+  z-index: 1; /* 确保蒙版在内容之下 */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 60px 20px 0px 20px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2; /* 确保内容在蒙版之上 */
+}
+.image1 {
+  max-width: 50%; /* 第一张图片最大宽度为父元素宽度的50% */
+  height: auto; /* 高度自动调整以保持图片的原始宽高比 */
+  border: 3px solid skyblue; /* 蓝色边框，5px宽 */
+}
+
+.image2 {
+  max-width: 100%; /* 第一张图片最大宽度为父元素宽度的50% */
+  height: auto; /* 高度自动调整以保持图片的原始宽高比 */
+  border: 3px solid skyblue; /* 蓝色边框，5px宽 */
+}
+
+p {
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+p:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 10px;
+  font-style: italic;
+  text-align: left;
+}
+
+p:nth-of-type(2) {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 22px;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+  text-align: left;
+}
+
+p:nth-of-type(3) {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 30px;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+  text-align: left;
+}
+
+p:nth-of-type(4) {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 10px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+}
+
+p:nth-of-type(5) {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 10px;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体",
+    "Times New Roman", Times, serif;
+  text-align: left;
+}
+
+p:nth-of-type(6) {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 10px;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体",
+    "Times New Roman", Times, serif;
+  text-align: left;
+}
+
+p:last-of-type {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  position: absolute;
+  bottom: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
