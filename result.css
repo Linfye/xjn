@@ -5,18 +5,18 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
-  position: relative; /* 确保伪元素可以相对于html定位 */
+  position: relative;
 }
 
 html::before {
-  content: ""; /* 伪元素需要内容属性 */
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* 黑色半透明蒙版 */
-  z-index: 1; /* 确保蒙版在内容之下 */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 body {
@@ -27,18 +27,18 @@ body {
   padding: 60px 20px 0px 20px;
   min-height: 100vh;
   position: relative;
-  z-index: 2; /* 确保内容在蒙版之上 */
+  z-index: 2;
 }
 .image1 {
-  max-width: 50%; /* 第一张图片最大宽度为父元素宽度的50% */
-  height: auto; /* 高度自动调整以保持图片的原始宽高比 */
-  border: 3px solid skyblue; /* 蓝色边框，5px宽 */
+  max-width: 50%;
+  height: auto;
+  border: 3px solid skyblue;
 }
 
 .image2 {
-  max-width: 100%; /* 第一张图片最大宽度为父元素宽度的50% */
-  height: auto; /* 高度自动调整以保持图片的原始宽高比 */
-  border: 3px solid skyblue; /* 蓝色边框，5px宽 */
+  max-width: 100%;
+  height: auto;
+  border: 3px solid skyblue;
 }
 
 p {

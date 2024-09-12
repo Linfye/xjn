@@ -34,11 +34,11 @@ form {
 }
 
 .gender-toggle {
-  flex-direction: column; /* 使标签和选项垂直排列 */
+  flex-direction: column;
 }
 
 .gender-toggle label {
-  margin-bottom: 15px; /* 为标签和选项之间添加一些间距 */
+  margin-bottom: 15px;
   color: #ffffff;
   font-size: 15px;
   text-align: left;
@@ -77,12 +77,11 @@ label {
 }
 
 label .chinese {
-  font-size: 15px; /* 中文大小 */
+  font-size: 15px;
 }
 
-/* 单独为英文设置样式 */
 label .english {
-  font-size: 7px; /* 英文大小 */
+  font-size: 7px;
   font-family: "Times New Roman", Times, serif;
 }
 
