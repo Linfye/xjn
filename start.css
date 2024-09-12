@@ -11,15 +11,16 @@ body {
 html {
   background-color: #231925;
   background-image: url("src/xjn2.png");
-  background-size: auto auto;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 100%;
 }
 
 form {
+  width: 90%;
   position: absolute;
-  bottom: 120px;
+  bottom: 100px;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -29,7 +30,7 @@ form {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  gap: 150px;
+  gap: 55px;
 }
 
 .gender-toggle {
@@ -37,7 +38,7 @@ form {
 }
 
 .gender-toggle label {
-  margin-bottom: 5px; /* 为标签和选项之间添加一些间距 */
+  margin-bottom: 15px; /* 为标签和选项之间添加一些间距 */
   color: #ffffff;
   font-size: 16px;
   text-align: left;
@@ -53,10 +54,10 @@ form {
 }
 
 .gender-options label {
-  padding: 15px 30px;
+  padding: 10px 10px;
   border: 1px solid #ccc;
   transition: background-color 0.2s;
-  font-size: 20px;
+  font-size: 10px;
   font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
 }
 
@@ -70,26 +71,26 @@ label {
   margin-top: 0px;
   display: block;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 10px;
   text-align: left;
   font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
 }
 
 label .chinese {
-  font-size: 20px; /* 中文大小 */
+  font-size: 15px; /* 中文大小 */
 }
 
 /* 单独为英文设置样式 */
 label .english {
-  font-size: 14px; /* 英文大小 */
+  font-size: 7px; /* 英文大小 */
   font-family: "Times New Roman", Times, serif;
 }
 
 label[for="gender"] {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: block;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 10px;
   text-align: left;
   font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
 }
@@ -99,11 +100,11 @@ input[type="text"] {
   color: #222375;
   font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 10px;
   align-self: center;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 0px;
-  padding: 15px 15px;
+  padding: 10px 10px;
   background-color: white;
   width: 100%;
 }
@@ -112,11 +113,11 @@ input[type="submit"] {
   color: #222375;
   font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 10px;
   align-self: center;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 0px;
-  padding: 15px 15px;
+  padding: 10px 10px;
   background-color: white;
   width: 100%;
 }
@@ -137,7 +138,7 @@ p:first-of-type {
   margin-top: 0px;
   margin-bottom: 10px;
   color: white;
-  font-size: 15px;
+  font-size: 10px;
   font-style: italic;
   text-align: left;
 }
@@ -146,13 +147,13 @@ p:nth-of-type(2) {
   margin-top: 0px;
   margin-bottom: 10px;
   color: white;
-  font-size: 35px;
+  font-size: 22px;
   font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
   text-align: left;
 }
 
 p:nth-of-type(3) {
-  font-size: 22px;
+  font-size: 11px;
   text-align: center;
   font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
   color: white;
@@ -162,7 +163,7 @@ p:nth-of-type(3) {
 }
 
 p:nth-of-type(4) {
-  font-size: 11px;
+  font-size: 7px;
   text-align: center;
   color: white;
   margin-top: 0px;
