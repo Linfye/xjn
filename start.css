@@ -1,0 +1,186 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 60px 20px 0px 20px;
+  min-height: 100vh;
+  position: relative;
+}
+
+html {
+  background-color: #231925;
+  background-image: url("src/xjn2.png");
+  background-size: auto auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+form {
+  position: absolute;
+  bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 150px;
+}
+
+.gender-toggle {
+  flex-direction: column; /* 使标签和选项垂直排列 */
+}
+
+.gender-toggle label {
+  margin-bottom: 5px; /* 为标签和选项之间添加一些间距 */
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+}
+
+.gender-options {
+  display: flex;
+}
+
+.gender-options input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.gender-options label {
+  padding: 15px 30px;
+  border: 1px solid #ccc;
+  transition: background-color 0.2s;
+  font-size: 20px;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+}
+
+.gender-options input[type="radio"]:checked + label {
+  background-color: #449041;
+  color: #222375;
+}
+
+label {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: left;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+}
+
+label .chinese {
+  font-size: 20px; /* 中文大小 */
+}
+
+/* 单独为英文设置样式 */
+label .english {
+  font-size: 14px; /* 英文大小 */
+  font-family: "Times New Roman", Times, serif;
+}
+
+label[for="gender"] {
+  margin-bottom: 10px;
+  display: block;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: left;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+}
+
+input[type="text"] {
+  text-align: center;
+  color: #222375;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+  font-weight: bold;
+  font-size: 20px;
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 15px 15px;
+  background-color: white;
+  width: 100%;
+}
+
+input[type="submit"] {
+  color: #222375;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+  font-weight: bold;
+  font-size: 20px;
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding: 15px 15px;
+  background-color: white;
+  width: 100%;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(to right, #449041, #375659);
+  border: 2px solid white;
+}
+
+p {
+  color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+p:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+  text-align: left;
+}
+
+p:nth-of-type(2) {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 35px;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+  text-align: left;
+}
+
+p:nth-of-type(3) {
+  font-size: 22px;
+  text-align: center;
+  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+  color: white;
+  margin-top: 0px;
+  position: absolute;
+  bottom: 65px;
+}
+
+p:nth-of-type(4) {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  position: absolute;
+  bottom: 50px;
+}
+
+p:last-of-type {
+  font-size: 12px;
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  position: absolute;
+  bottom: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

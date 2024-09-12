@@ -56,7 +56,7 @@ button {
   padding: 15px 40px; /* 增加按钮内边距，按钮高度和宽度增加 */
   font-size: 16px; /* 字体大小 */
   cursor: pointer; /* 鼠标悬停时变成手型 */
-  border-radius: 5px; /* 圆角按钮 */
+  border-radius: 0px; /* 圆角按钮 */
 
   background-clip: padding-box;
   width: 220px; /* 按钮的固定宽度 */

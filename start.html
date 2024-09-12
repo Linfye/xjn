@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>想見你</title>
+    <link rel="stylesheet" href="start.css" />
+  </head>
+  <body>
+    <p>Find your lookalike from anywhere in the world</p>
+    <p>尋找世界上的<br />另一個自己</p>
+    <form action="result.html" method="post">
+      <div>
+        <label for="username">
+          <span class="chinese">姓名</span>
+          <span class="english">Name</span></label
+        >
+        <input type="text" id="username" name="username" placeholder="王詮勝" />
+      </div>
+      <div class="form-row">
+        <div class="gender-toggle">
+          <label for="gender">
+            <span class="chinese">性別</span>
+            <span class="english">Gender</span></label
+          >
+          <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="male" checked />
+            <label for="male">男</label>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">女</label>
+          </div>
+        </div>
+        <div>
+          <label for="age">
+            <span class="chinese">年齡</span>
+            <span class="english">Age</span></label
+          >
+          <input type="text" id="age" name="age" />
+        </div>
+      </div>
+      <input type="submit" value="上傳照片 Upload picture" />
+    </form>
+    <p>請上傳五官清晰的照片，以免影響系統識別</p>
+    <p>
+      Please upload a photo that is unrelated to me, so as not to affect system
+      recognition.
+    </p>
+    <p>Copyright⚪由不存在的有限公司强力驅動</p>
+  </body>
+</html>
