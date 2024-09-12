@@ -9,7 +9,7 @@
   <body>
     <p>Find your lookalike from anywhere in the world</p>
     <p>尋找世界上的<br />另一個自己</p>
-    <form action="result.html" method="post">
+    <form action="result.html" method="get">
       <div>
         <label for="username">
           <span class="chinese">姓名</span>
@@ -38,7 +38,11 @@
           <input type="text" id="age" name="age" />
         </div>
       </div>
-      <input type="submit" value="上傳照片 Upload picture" />
+      <input
+        type="button"
+        value="上傳照片 Upload picture"
+        onclick="window.location.href='result.html';"
+      />
     </form>
     <p>請上傳五官清晰的照片，以免影響系統識別</p>
     <p>
