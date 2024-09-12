@@ -109,7 +109,7 @@ input[type="text"] {
   width: 100%;
 }
 
-input[type="button"] {
+input[type="submit"] {
   color: #222375;
   font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
   font-weight: bold;
@@ -122,7 +122,7 @@ input[type="button"] {
   width: 100%;
 }
 
-input[type="button"]:hover {
+input[type="submit"]:hover {
   background: linear-gradient(to right, #449041, #375659);
   border: 2px solid white;
 }
