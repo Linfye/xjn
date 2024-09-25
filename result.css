@@ -73,6 +73,7 @@ p:first-of-type {
 #div3 {
   position: absolute;
   right: 20px;
+  top: 90px;
 }
 
 p:nth-of-type(2) {
