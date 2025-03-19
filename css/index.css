@@ -14,7 +14,7 @@ p:first-of-type {
   background-clip: content-box;
   border-top: 3.5px solid #ffffff;
   border-bottom: 3.5px solid #ffffff;
-  font-family: Comic Sans MS,"宋体";
+  font-family: Comic Sans MS, "宋体";
   font-size: 14px;
 }
 
@@ -24,7 +24,7 @@ p:first-of-type {
 
 .dropdown-content {
   display: none;
-  position:fixed;
+  position: fixed;
   right: 0;
   background-color: #8ebdffd6;
   min-width: 160px;
@@ -39,20 +39,20 @@ p:first-of-type {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #6387c6d7}
+.dropdown-content a:hover {
+  background-color: #6387c6d7;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.color-change{
+.color-change {
   color: black;
 }
-.color-change:active{
+.color-change:active {
   color: #e03c00;
 }
-
-
 
 #div2 {
   float: right;
