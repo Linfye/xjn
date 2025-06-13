@@ -1,6 +1,17 @@
+@font-face {
+  font-family: "思源宋体 Regular";
+  font-weight: 400;
+  src: url("//at.alicdn.com/wf/webfont/QHSXhQsLseOL/XEZXh4ypbvHJ.woff2")
+      format("woff2"),
+    url("//at.alicdn.com/wf/webfont/QHSXhQsLseOL/blALkDxddpj6.woff")
+      format("woff");
+  font-display: swap;
+}
+
 p:first-of-type {
   margin-bottom: 0px;
   color: white;
+  font-family: "思源宋体 Regular";
   font-size: 15px;
   font-style: italic;
   text-align: left;
@@ -14,7 +25,7 @@ p:first-of-type {
   background-clip: content-box;
   border-top: 3.5px solid #ffffff;
   border-bottom: 3.5px solid #ffffff;
-  font-family: Comic Sans MS, "宋体";
+  font-family: "思源宋体 Regular";
   font-size: 14px;
 }
 
@@ -63,7 +74,7 @@ p:nth-of-type(2) {
   margin-bottom: 10px;
   color: white;
   font-size: 50px;
-  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+  font-family: "思源宋体 Regular";
   text-align: left;
 }
 
@@ -71,7 +82,7 @@ p:nth-of-type(3) {
   margin-top: 0px;
   color: white;
   font-size: 15px;
-  font-family: "SimHei", "Microsoft YaHei", "黑体";
+  font-family: "思源宋体 Regular";
   text-align: left;
 }
 
@@ -80,18 +91,6 @@ p:nth-of-type(3) {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
 
   position: absolute;
   bottom: 40px;
@@ -110,21 +109,22 @@ button {
   cursor: pointer;
   border-radius: 0px;
 
-  background-clip: padding-box;
-  width: 220px;
-  height: 30px;
   background-color: transparent;
   color: white;
-  border: 2px solid transparent;
-  border-image: radial-gradient(transparent, white) 1;
+  border: 2px solid white;
+  width: 220px;
+  height: 40px;
+
+  box-shadow: 0 0 8px white inset;
+
   transition: background 0.3s, box-shadow 0.3s, border 0.3s, color 0.3s;
 }
 
 button:hover {
   background: linear-gradient(to right, #449041, #375659);
   color: white;
-  border-image: none;
   border: 2px solid white;
+  box-shadow: none;
 }
 
 p:last-of-type {
