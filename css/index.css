@@ -1,18 +1,8 @@
-@font-face {
-  font-family: "思源宋体 Regular";
-  font-weight: 400;
-  src: url("//at.alicdn.com/wf/webfont/QHSXhQsLseOL/XEZXh4ypbvHJ.woff2")
-      format("woff2"),
-    url("//at.alicdn.com/wf/webfont/QHSXhQsLseOL/blALkDxddpj6.woff")
-      format("woff");
-  font-display: swap;
-}
-
 p:first-of-type {
   margin-bottom: 0px;
   color: white;
-  font-family: "思源宋体 Regular";
-  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
   font-style: italic;
   text-align: left;
 }
@@ -25,7 +15,7 @@ p:first-of-type {
   background-clip: content-box;
   border-top: 3.5px solid #ffffff;
   border-bottom: 3.5px solid #ffffff;
-  font-family: "思源宋体 Regular";
+  font-family: "SimSun", "宋体", serif;
   font-size: 14px;
 }
 
@@ -74,7 +64,7 @@ p:nth-of-type(2) {
   margin-bottom: 10px;
   color: white;
   font-size: 50px;
-  font-family: "思源宋体 Regular";
+  font-family: "SimSun", "宋体", serif;
   text-align: left;
 }
 
@@ -82,7 +72,7 @@ p:nth-of-type(3) {
   margin-top: 0px;
   color: white;
   font-size: 15px;
-  font-family: "思源宋体 Regular";
+  font-family: "SimSun", "宋体", serif;
   text-align: left;
 }
 
@@ -91,7 +81,6 @@ p:nth-of-type(3) {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-
   position: absolute;
   bottom: 40px;
   left: 50%;
@@ -105,6 +94,7 @@ button {
   font-weight: bold;
 
   padding: 15px 40px;
+  font-family: "SimSun", "宋体", serif;
   font-size: 16px;
   cursor: pointer;
   border-radius: 0px;
@@ -129,6 +119,7 @@ button:hover {
 
 p:last-of-type {
   font-size: 12px;
+  font-family: "SimSun", "宋体", serif;
   text-align: center;
   color: white;
   margin-top: 0px;

@@ -29,6 +29,7 @@ body {
   position: relative;
   z-index: 2;
 }
+
 .image1 {
   max-width: 50%;
   height: auto;
@@ -53,6 +54,7 @@ p:first-of-type {
   margin-bottom: 10px;
   color: white;
   font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
   font-style: italic;
   text-align: left;
 }
@@ -76,7 +78,7 @@ p:first-of-type {
 
 .dropdown-content {
   display: none;
-  position:fixed;
+  position: fixed;
   right: 0;
   background-color: #8ebdffd6;
   min-width: 160px;
@@ -91,16 +93,18 @@ p:first-of-type {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #6387c6d7}
+.dropdown-content a:hover {
+  background-color: #6387c6d7;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.color-change{
+.color-change {
   color: black;
 }
-.color-change:active{
+.color-change:active {
   color: #e03c00;
 }
 
@@ -114,17 +118,17 @@ p:nth-of-type(2) {
   margin-top: 0px;
   margin-bottom: 10px;
   color: white;
-  font-size: 22px;
-  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+  font-size: 32px;
+  font-family: "SimSun", "宋体", serif;
   text-align: left;
 }
 
 p:nth-of-type(3) {
-  margin-top: 10px;
+  margin-top: 0px;
   margin-bottom: 0px;
   color: white;
   font-size: 30px;
-  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体";
+  font-family: "SimSun", "宋体", serif;
   text-align: left;
 }
 
@@ -143,8 +147,7 @@ p:nth-of-type(5) {
   margin-bottom: 0px;
   color: white;
   font-size: 10px;
-  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体",
-    "Times New Roman", Times, serif;
+  font-family: "SimSun", "宋体", serif;
   text-align: left;
 }
 
@@ -154,8 +157,7 @@ p:nth-of-type(6) {
   margin-bottom: 0px;
   color: white;
   font-size: 10px;
-  font-family: "SimSun", "Songti SC", "AR PL UMing", "STSong", "宋体",
-    "Times New Roman", Times, serif;
+  font-family: "SimSun", "宋体", serif;
   text-align: left;
 }
 
